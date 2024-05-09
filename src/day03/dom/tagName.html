@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Collection</title>
+</head>
+<body>
+    <ul>
+        <li>돈까스</li>
+        <li>국밥</li>
+        <li>제육덮밥</li>
+    </ul>
+<script src="/src/day03/dom/tagName.js">
+    const allElements = document.getElementsByTagName("*");
+    console.log(allElements);
+
+    const liElements = document.getElementsByTagName("li");
+    console.log(liElements[0].textContent);
+    console.log(liElements[1].textContent);
+</script>
+</body>
+</html>

@@ -11,3 +11,8 @@
 > 2. 슬라이스(splice) 와 concat
 > 3. 함수(function)
 
+### [3일차](https://github.com/LegdayDev/JavaScript-Study/blob/master/markdown/day03.md)
+1. callback 이란?
+2. 클래스란?
+3. Object 란?
+4. dom 이란?
