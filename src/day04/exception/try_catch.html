@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Try_Catch</title>
+</head>
+<body>
+<h1>nuber guess</h1>
+<p>1부터 100사이의 숫자를 입력하시오.</p>
+<input type="text" id="number" name="number"/>
+<button id="btnGuess" type="button" onClick="numGuess()">숫자 추측</button>
+<p id="hint"></p>
+<script>
+    let result = Math.round(Math.random() * 100) + 1;
+    let hint = document.getElementById("hint");
+    eval();
+    function numGuess() {
+        try {
+            let inputNum = document.querySelector("#number").value;
+            if (inputNum > result) throw "너무큼!";
+            else if (inputNum < result) throw "너무작음!";
+            else throw "정답!";
+        } catch (err) {
+            hint.innerHTML = `힌트: ${err}`;
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자리 배치도</title>
+</head>
+<body>
+<h1>자리 배치도</h1>
+<div id="tableContainer"></div>
+<script>
+
+    let table = document.createElement("table");
+    table.border = 1;
+    let memNum = prompt("입장객은 몇명입니까?");
+    let colNum = prompt("한 줄에 몇명씩 앉습니까?");
+
+    let rowNum = ((memNum / colNum) + 1);
+    rowNum = parseInt(rowNum);
+
+
+    for (let i = 0; i < rowNum; i++) {
+        let dataRow = document.createElement("tr");
+        for (let j = 0; j < colNum; j++) {
+            let dataCell = document.createElement("td");
+            let seatNum = ((i * colNum) + j + 1);
+            if (seatNum > memNum) break;
+            dataCell.textContent = `좌석 ${seatNum}`;
+            dataRow.appendChild(dataCell);
+        }
+        table.appendChild(dataRow);
+    }
+    let tableContainer = document.getElementById("tableContainer");
+    tableContainer.appendChild(table);
+
+
+</script>
+</body>
+</html>

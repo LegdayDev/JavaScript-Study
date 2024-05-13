@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getElementByClassname</title>
+</head>
+<body>
+<h1>getElementByClassname</h1>
+<h2>근본 메뉴</h2>
+<ul>
+    <li>국밥</li>
+    <li>돈까스</li>
+    <li>제육</li>
+</ul>
+<h2>쓰레기 메뉴</h2>
+<ul>
+    <li class="a">마라탕</li>
+    <li class="a">탕후루</li>
+    <li class="a">까르보나라 떡볶이</li>
+</ul>
+<script>
+    let dirtyFoodList = document.getElementsByClassName("a");
+    console.log(dirtyFoodList[0].textContent); // 첫번째 a 클래스 태그 텍스트 값
+</script>
+</body>
+</html>

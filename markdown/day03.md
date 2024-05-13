@@ -1,4 +1,4 @@
-## JavaScript 2일차 학습
+## JavaScript 3일차 학습
 
 ### 목차
 
@@ -178,7 +178,7 @@
     
     printValue(scott, 'name');
   ```
-  ![img.png](img.png)
+  ![img.png](../resources/images/day03/img04.png)
 - 왜냐하면 첫줄에 `console.log(obj.key)` 는 obj 에서 'key'를 라는 key 를 찾는다.
 - 하지만 `console.log(obj[key])` 는 obj 에 입력받은 'key' 라는 key 값을 찾는다.
 

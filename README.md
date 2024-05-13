@@ -12,7 +12,12 @@
 > 3. 함수(function)
 
 ### [3일차](https://github.com/LegdayDev/JavaScript-Study/blob/master/markdown/day03.md)
-1. callback 이란?
-2. 클래스란?
-3. Object 란?
-4. dom 이란?
+> 1. callback 이란?
+> 2. 클래스란?
+> 3. Object 란?
+> 4. dom 이란?
+
+### [4일차](https://github.com/LegdayDev/JavaScript-Study/blob/master/markdown/day04.md)
+> 1. HTML DOM 이란?
+> 2. addEventListener() 란?(버블링과 캡쳐링)
+> 3. 예외처리

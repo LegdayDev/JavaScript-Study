@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inner HTML</title>
+</head>
+<body>
+<button onclick="innerText()">innerText 표시하기</button>
+<button onclick="innerHtml()">innerHTML 표시하기</button>
+<h1>현재 시각: </h1>
+<div id="current"></div>
+<script>
+    let now = new Date();
+
+    function innerText(){
+        document.getElementById("current").innerText = now.toString();
+    }
+
+    function innerHtml(){
+        document.getElementById("current").innerHTML = `<em>${now}</em>`
+    }
+</script>
+</body>
+</html>

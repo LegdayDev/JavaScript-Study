@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>idName</title>
+</head>
+<body>
+<p id="welcome">어서오고 ㅋㅋ</p>
+<button id="btnClick" type="button" onclick="changeColor('red')">클릭해봐 ㅋㅋ</button>
+<script>
+    let count = 0;
+
+    function changeColor(color) {
+        let data = document.getElementById("welcome");
+        let button = document.getElementById("btnClick");
+        if (count % 2 == 0) {
+            data.style.color = color;
+            button.style.backgroundColor="blue";
+            button.textContent = "민주당 ㅋㅋ";
+        }
+        else {
+            data.style.color="blue";
+            button.style.backgroundColor="red";
+            button.textContent="국힘당 ㅋㅋ";
+        }
+        count++;
+    }
+</script>
+</body>
+</html>
