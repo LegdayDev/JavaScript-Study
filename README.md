@@ -21,3 +21,9 @@
 > 1. HTML DOM 이란?
 > 2. addEventListener() 란?(버블링과 캡쳐링)
 > 3. 예외처리
+
+### [5일차](https://github.com/LegdayDev/JavaScript-Study/blob/master/markdown/day05.md)
+> 1. 웹기술 나열
+> 2. JSON 학습
+> 3. 동기/비동기
+> 4. Array API
