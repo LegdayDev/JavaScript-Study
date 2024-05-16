@@ -27,3 +27,7 @@
 > 2. JSON 학습
 > 3. 동기/비동기
 > 4. Array API
+
+### [6일차](https://github.com/LegdayDev/JavaScript-Study/blob/master/markdown/day06.md)
+> 1. Fetch 란?
+> 2. 시험과제
